@@ -1,0 +1,37 @@
+.advantages-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+}
+
+.advantage-item {
+    display: flex;
+    gap: 20px;
+    align-items: flex-start;
+}
+
+.advantage-icon {
+    width: 60px;
+    height: 60px;
+    min-width: 60px;
+    background-color: rgba(26, 115, 232, 0.1);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.advantage-icon i {
+    font-size: 24px;
+    color: var(--primary-color);
+}
+
+.advantage-content h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+
+.advantage-content p {
+    color: var(--text-light);
+}

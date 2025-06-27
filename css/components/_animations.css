@@ -1,0 +1,361 @@
+/* Анимации для сайта по грузоперевозкам */
+
+/* Анимация загрузки страницы */
+.fade-in {
+    animation: fadeIn 0.8s ease-in-out forwards;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+.service-card {
+    transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275), box-shadow 0.4s ease;
+}
+
+.service-card:hover {
+    transform: translateY(-15px) scale(1.02);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1), 0 5px 15px rgba(0, 0, 0, 0.07);
+}
+
+.service-card:hover .service-icon {
+    animation: pulse 1.5s infinite;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+        box-shadow: 0 0 0 0 rgba(26, 115, 232, 0.4);
+    }
+    70% {
+        transform: scale(1.05);
+        box-shadow: 0 0 0 10px rgba(26, 115, 232, 0);
+    }
+    100% {
+        transform: scale(1);
+        box-shadow: 0 0 0 0 rgba(26, 115, 232, 0);
+    }
+}
+
+.advantage-icon {
+    transition: all 0.3s ease;
+}
+
+.advantage-item:hover .advantage-icon {
+    transform: rotate(360deg);
+    background-color: var(--primary-color);
+}
+
+.advantage-item:hover .advantage-icon i {
+    color: white;
+}
+
+.calculate-btn {
+    position: relative;
+    overflow: hidden;
+}
+
+.calculate-btn:after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 5px;
+    height: 5px;
+    background: rgba(255, 255, 255, 0.5);
+    opacity: 0;
+    border-radius: 100%;
+    transform: scale(1, 1) translate(-50%);
+    transform-origin: 50% 50%;
+}
+
+.calculate-btn:focus:not(:active)::after {
+    animation: ripple 1s ease-out;
+}
+
+@keyframes ripple {
+    0% {
+        transform: scale(0, 0);
+        opacity: 0.5;
+    }
+    20% {
+        transform: scale(25, 25);
+        opacity: 0.5;
+    }
+    100% {
+        opacity: 0;
+        transform: scale(40, 40);
+    }
+}
+
+
+.logo h1 {
+    position: relative;
+    overflow: hidden;
+}
+
+.logo h1 span {
+    position: relative;
+    display: inline-block;
+}
+
+.logo:hover h1 span {
+    animation: logoWave 0.8s ease;
+}
+
+@keyframes logoWave {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-5px);
+    }
+}
+
+
+.main-nav a::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: -2px;
+    left: 0;
+    background-color: var(--primary-color);
+    visibility: hidden;
+    transform: scaleX(0);
+    transition: all 0.3s ease-in-out;
+}
+
+.main-nav a:hover::before {
+    visibility: visible;
+    transform: scaleX(1);
+}
+
+.result-content.loading {
+    position: relative;
+}
+
+.result-content.loading::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+    animation: loading 1.5s infinite;
+}
+
+@keyframes loading {
+    0% {
+        transform: translateX(-100%);
+    }
+    100% {
+        transform: translateX(100%);
+    }
+}
+
+
+.partner-logo {
+    transition: all 0.5s ease;
+}
+
+.partner-logo:hover {
+    transform: translateY(-10px) scale(1.05);
+    filter: grayscale(0);
+    opacity: 1;
+}
+
+/* Анимация для кнопок CTA */
+.primary-btn, .secondary-btn {
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.primary-btn::before, .secondary-btn::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+    transition: all 0.6s;
+    z-index: -1;
+}
+
+.primary-btn:hover::before, .secondary-btn:hover::before {
+    left: 100%;
+}
+
+/* Анимация для слайдера */
+.slide {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: opacity 0.8s ease, transform 0.8s ease;
+    transform: scale(1.05);
+}
+
+.slide.active {
+    opacity: 1;
+    transform: scale(1);
+}
+
+/* Анимация для лого в футере */
+.footer-logo h2 {
+    position: relative;
+}
+
+.footer-logo:hover h2 {
+    animation: heartbeat 1.5s ease-in-out infinite;
+}
+
+@keyframes heartbeat {
+    0% {
+        transform: scale(1);
+    }
+    14% {
+        transform: scale(1.1);
+    }
+    28% {
+        transform: scale(1);
+    }
+    42% {
+        transform: scale(1.1);
+    }
+    70% {
+        transform: scale(1);
+    }
+}
+
+/* Анимации для социальных иконок */
+.social-links a {
+    overflow: hidden;
+    position: relative;
+}
+
+.social-links a:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    transform: scale(0);
+    transition: all 0.3s ease;
+    z-index: -1;
+}
+
+.social-links a:hover:before {
+    transform: scale(1.2);
+}
+
+.social-links a:hover i {
+    animation: bounceIcon 0.4s ease;
+}
+
+@keyframes bounceIcon {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-5px);
+    }
+}
+
+/* Анимация для модальных окон */
+.modal-content {
+    transform: scale(0.8);
+    opacity: 0;
+    transition: all 0.3s ease-in-out;
+}
+
+.modal.active .modal-content {
+    transform: scale(1);
+    opacity: 1;
+}
+
+/* Анимация для иконок в секции преимуществ */
+.advantage-item:hover .advantage-icon i {
+    animation: wobble 1s ease;
+}
+
+@keyframes wobble {
+    0%, 100% {
+        transform: translateX(0%);
+    }
+    15% {
+        transform: translateX(-15%) rotate(-5deg);
+    }
+    30% {
+        transform: translateX(10%) rotate(3deg);
+    }
+    45% {
+        transform: translateX(-10%) rotate(-3deg);
+    }
+    60% {
+        transform: translateX(5%) rotate(2deg);
+    }
+    75% {
+        transform: translateX(-5%) rotate(-1deg);
+    }
+}
+
+/* Анимация для страницы услуг */
+.service-row {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: all 0.6s ease;
+}
+
+.service-row.animate {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Анимация для заголовков */
+.section-header h2 {
+    position: relative;
+}
+
+.section-header h2::after {
+    transition: width 0.5s ease;
+    width: 0;
+}
+
+.section-header.animate h2::after {
+    width: 60px;
+}
+
+/* Анимация для меню */
+.mobile-menu-toggle {
+    transition: all 0.3s ease;
+}
+
+.mobile-menu-toggle.active {
+    transform: rotate(90deg);
+}
+
+/* Анимация для ввода в форме */
+.form-group input:focus, 
+.form-group select:focus, 
+.form-group textarea:focus {
+    transform: translateY(-2px);
+    transition: all 0.3s ease;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+} 

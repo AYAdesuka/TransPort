@@ -1,0 +1,139 @@
+:root {
+    --primary-color: #1a73e8;
+    --primary-hover: #1557b0;
+    --secondary-color: #ff6d00;
+    --secondary-hover: #e56200;
+    --text-color: #333;
+    --text-light: #666;
+    --bg-color: #fff;
+    --bg-light: #f5f7fa;
+    --bg-dark: #0f2a4a;
+    --border-color: #e0e4e8;
+    --border-radius: 6px;
+    --shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+    --transition: all 0.3s ease;
+}
+
+.body {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    color: var(--text-color);
+    background-color: var(--bg-color);
+    overflow-x: hidden;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;    
+}
+
+a {
+    color: var(--primary-color);
+    transition: var(--transition);
+}
+
+a:hover {
+    color: var(--primary-hover);
+}
+
+
+.section {
+    padding: 80px 0;
+}
+
+
+@media (max-width: 1024px) {
+    .header-contact {
+        display: none;
+    }
+
+    .mobile-menu-toggle {
+        display: block;
+    }
+
+    .main-nav {
+        position: fixed;
+        top: 80px;
+        left: -100%;
+        width: 280px;
+        height: calc(100vh - 80px);
+        background-color: white;
+        padding: 30px;
+        box-shadow: 5px 0 15px rgba(0, 0, 0, 0.1);
+        transition: var(--transition);
+        z-index: 1000;
+    }
+
+    .main-nav.active {
+        left: 0;
+    }
+
+    .main-nav ul {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .slide-content h2 {
+        font-size: 36px;
+    }
+
+    .slide-content p {
+        font-size: 18px;
+    }
+
+    .calculator-container {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 768px) {
+    section {
+        padding: 60px 0;
+    }
+
+    .section-header h2 {
+        font-size: 30px;
+    }
+
+    .slider-container {
+        height: 500px;
+    }
+
+    .slide-content {
+        padding: 80px 0;
+    }
+
+    .slide-content h2 {
+        font-size: 32px;
+    }
+
+    .form-row {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .footer-bottom .container {
+        flex-direction: column;
+        gap: 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    .slider-container {
+        height: 400px;
+    }
+
+    .slide-content h2 {
+        font-size: 26px;
+    }
+
+    .slide-content p {
+        font-size: 16px;
+    }
+
+    .modal-content {
+        padding: 30px 20px;
+    }
+} 

@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TransPort - Надежные грузоперевозки</title>
+    <link rel="stylesheet" href="css/index.css">    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="shortcut icon" href="images/TransPort.svg">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body class="body">
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <a href="index.html">
+                        <h1>Trans<span>Port</span></h1>
+                    </a>
+                </div>
+                <nav class="main-nav">
+                    <ul>
+                        <li><a href="index.html" class="active">Главная</a></li>
+                        <li><a href="pages/services.html">Услуги</a></li>
+                        <li><a href="pages/about.html">О компании</a></li>
+                        <li><a href="pages/fleet.html">Автопарк</a></li>
+                        <li><a href="pages/contacts.html">Контакты</a></li>
+                    </ul>
+                </nav>
+                <div class="header-contact">
+                    <a href="tel:+78001234567" class="phone">+7 (800) 123-45-67</a>
+                    <button class="callback-btn">Заказать звонок</button>
+                </div>
+                <div class="mobile-menu">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="section hero">
+        <div class="slider-container">
+            <div class="slide active">
+                <div class="slide-bg slide-photo1"></div>
+                <div class="container">
+                    <div class="slide-content">
+                        <h2>Надежные грузоперевозки по всей России</h2>
+                        <p>Быстрая доставка, низкие цены и гарантия сохранности грузов</p>
+                        <a href="#calculator" class="btn primary-btn">Рассчитать стоимость</a>
+                    </div>
+                </div>
+            </div>
+            <div class="slide">
+                <div class="slide-bg slide-photo2"></div>
+                <div class="container">
+                    <div class="slide-content">
+                        <h2>Собственный автопарк современной техники</h2>
+                        <p>Более 100 единиц техники различной грузоподъемности</p>
+                        <a href="pages/fleet.html" class="btn primary-btn">Наш автопарк</a>
+                    </div>
+                </div>
+            </div>
+            <div class="slide">
+                <div class="slide-bg slide-photo3"></div>
+                <div class="container">
+                    <div class="slide-content">
+                        <h2>Международные грузоперевозки</h2>
+                        <p>Доставка грузов в страны СНГ и Европы с полным таможенным оформлением</p>
+                        <a href="pages/services.html" class="btn primary-btn">Подробнее об услугах</a>
+                    </div>
+                </div>
+            </div>
+            <div class="slider-controls">
+                <button class="prev-slide"><i class="fas fa-chevron-left"></i></button>
+                <div class="slider-dots">
+                    <span class="dot active" data-slide="0"></span>
+                    <span class="dot" data-slide="1"></span>
+                    <span class="dot" data-slide="2"></span>
+                </div>
+                <button class="next-slide"><i class="fas fa-chevron-right"></i></button>
+            </div>
+        </div>
+    </section>
+
+    <section class="section services">
+        <div class="container">
+            <div class="section-header fade-in">
+                <h2>Наши услуги</h2>
+                <p>Мы предлагаем комплексные решения для транспортировки любых грузов</p>
+            </div>
+            <div class="services-grid">
+                <div class="service-card fade-in card-3d">
+                    <div class="service-icon">
+                        <i class="fas fa-truck"></i>
+                    </div>
+                    <h3>Автомобильные перевозки</h3>
+                    <p>Доставка грузов автотранспортом по всей России и странам СНГ. Различные типы транспорта под любые задачи.</p>
+                    <a href="pages/services.html#auto" class="learn-more">Подробнее <i class="fas fa-arrow-right"></i></a>
+                </div>
+                <div class="service-card fade-in card-3d">
+                    <div class="service-icon">
+                        <i class="fas fa-train"></i>
+                    </div>
+                    <h3>Железнодорожные перевозки</h3>
+                    <p>Организация доставки различных грузов по железной дороге. Полный комплекс логистических услуг.</p>
+                    <a href="pages/services.html#rail" class="learn-more">Подробнее <i class="fas fa-arrow-right"></i></a>
+                </div>
+                <div class="service-card fade-in card-3d">
+                    <div class="service-icon">
+                        <i class="fas fa-ship"></i>
+                    </div>
+                    <h3>Морские перевозки</h3>
+                    <p>Доставка контейнеров и других грузов морским транспортом. Международные маршруты и опытные специалисты.</p>
+                    <a href="pages/services.html#sea" class="learn-more">Подробнее <i class="fas fa-arrow-right"></i></a>
+                </div>
+                <div class="service-card fade-in card-3d">
+                    <div class="service-icon">
+                        <i class="fas fa-warehouse"></i>
+                    </div>
+                    <h3>Складские услуги</h3>
+                    <p>Современные складские комплексы для хранения и обработки грузов. Полный спектр складских операций.</p>
+                    <a href="pages/services.html#warehouse" class="learn-more">Подробнее <i class="fas fa-arrow-right"></i></a>
+                </div>
+                <div class="service-card fade-in card-3d">
+                    <div class="service-icon">
+                        <i class="fas fa-plane"></i>
+                    </div>
+                    <h3>Авиаперевозки</h3>
+                    <p>Быстрая и надежная доставка грузов воздушным транспортом по России и за рубеж. Оперативная обработка и сопровождение.</p>
+                    <a href="pages/services.html#air" class="learn-more">Подробнее <i class="fas fa-arrow-right"></i></a>
+                </div>
+                <div class="service-card fade-in card-3d">
+                    <div class="service-icon">
+                        <i class="fas fa-box-open"></i>
+                    </div>
+                    <h3>Таможенное оформление</h3>
+                    <p>Профессиональное сопровождение грузов при прохождении таможни. Оформление всех необходимых документов.</p>
+                    <a href="pages/services.html#customs" class="learn-more">Подробнее <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+            <div class="services-cta">
+                <a href="pages/services.html" class="btn secondary-btn">Все услуги</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="section advantages">
+        <div class="container">
+            <div class="section-header fade-in">
+                <h2>Преимущества работы с нами</h2>
+                <p>Почему клиенты выбирают именно нас</p>
+            </div>
+            <div class="advantages-container">
+                <div class="advantage-item fade-in">
+                    <div class="advantage-icon">
+                        <i class="fas fa-clock"></i>
+                    </div>
+                    <div class="advantage-content">
+                        <h3>Точность в сроках</h3>
+                        <p>Гарантируем доставку точно в срок благодаря отлаженной логистике и опытным водителям</p>
+                    </div>
+                </div>
+                <div class="advantage-item fade-in">
+                    <div class="advantage-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <div class="advantage-content">
+                        <h3>Безопасность грузов</h3>
+                        <p>Каждый груз застрахован, а наши специалисты обеспечивают бережную погрузку и перевозку</p>
+                    </div>
+                </div>
+                <div class="advantage-item fade-in">
+                    <div class="advantage-icon">
+                        <i class="fas fa-truck-loading"></i>
+                    </div>
+                    <div class="advantage-content">
+                        <h3>Современный автопарк</h3>
+                        <p>Собственный автопарк с техникой различной грузоподъемности, регулярно обновляемый</p>
+                    </div>
+                </div>
+                <div class="advantage-item fade-in">
+                    <div class="advantage-icon">
+                        <i class="fas fa-headset"></i>
+                    </div>
+                    <div class="advantage-content">
+                        <h3>Индивидуальный подход</h3>
+                        <p>Персональный менеджер для каждого клиента и гибкие условия сотрудничества</p>
+                    </div>
+                </div>
+                <div class="advantage-item fade-in">
+                    <div class="advantage-icon">
+                        <i class="fas fa-map-marked-alt"></i>
+                    </div>
+                    <div class="advantage-content">
+                        <h3>Широкая география перевозок</h3>
+                        <p>Осуществляем доставку грузов по всей России и странам СНГ, включая отдалённые регионы</p>
+                    </div>
+                </div>
+                <div class="advantage-item fade-in">
+                    <div class="advantage-icon">
+                        <i class="fas fa-user-shield"></i>
+                    </div>
+                    <div class="advantage-content">
+                        <h3>Поддержка 24/7</h3>
+                        <p>Круглосуточная информационная поддержка и отслеживание статуса груза в реальном времени</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="calculator" class="section calculator">
+        <div class="container">
+            <div class="section-header fade-in">
+                <h2>Калькулятор стоимости</h2>
+                <p>Рассчитайте примерную стоимость перевозки вашего груза</p>
+            </div>
+            <div class="calculator-container">
+                <form id="calc-form" class="calculator-form">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="from">Откуда</label>
+                            <input type="text" id="from" name="from" placeholder="Город отправления" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="to">Куда</label>
+                            <input type="text" id="to" name="to" placeholder="Город назначения" required>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="weight">Вес груза (кг)</label>
+                            <input type="number" id="weight" name="weight" placeholder="Вес груза" min="1" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="volume">Объем груза (м³)</label>
+                            <input type="number" id="volume" name="volume" placeholder="Объем груза" min="0.1" step="0.1" required>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="cargo-type">Тип груза</label>
+                            <select id="cargo-type" name="cargo-type" required>
+                                <option value="" disabled selected>Выберите тип груза</option>
+                                <option value="standard">Стандартный</option>
+                                <option value="fragile">Хрупкий</option>
+                                <option value="dangerous">Опасный</option>
+                                <option value="oversize">Негабаритный</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="service-type">Тип перевозки</label>
+                            <select id="service-type" name="service-type" required>
+                                <option value="" disabled selected>Выберите тип перевозки</option>
+                                <option value="auto">Автомобильная</option>
+                                <option value="rail">Железнодорожная</option>
+                                <option value="sea">Морская</option>
+                                <option value="combined">Мультимодальная</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <button type="submit" class="btn primary-btn calculate-btn">Рассчитать стоимость</button>
+                    </div>
+                </form>
+                <div id="calculation-result" class="calculation-result">
+                    <div class="result-header">
+                        <h3>Результат расчета</h3>
+                    </div>
+                    <div class="result-content">
+                        <p>Заполните форму для расчета стоимости перевозки</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section cta particles-bg">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Первый раз сотрудничаете с нами?</h2>
+                <p>Оставьте заявку прямо сейчас и получите бесплатную консультацию специалиста</p>
+                <button class="btn primary-btn order-btn">Оставить заявку</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="section testimonials">
+        <div class="container">
+            <div class="section-header">
+                <h2>Отзывы клиентов</h2>
+                <p>Что говорят о нас наши клиенты</p>
+            </div>
+            <div class="testimonials-slider">
+                <div class="testimonial-item active">
+                    <div class="testimonial-content">
+                        <div class="testimonial-text">
+                            <p>Сотрудничаем с компанией TransPort более 3 лет. За это время не было ни одной задержки или проблемы с доставкой. Профессиональный подход к делу и внимание к деталям делают эту компанию надежным партнером.</p>
+                        </div>
+                        <div class="testimonial-author">
+                            <img src="images/human/testimonial 1.avif" alt="Чин-Гиз Петров">
+                            <div>
+                                <h4>Андрей Петров</h4>
+                                <p>ООО "СтройМаркет"</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-item">
+                    <div class="testimonial-content">
+                        <div class="testimonial-text">
+                            <p>Благодарим компанию TransPort за оперативную и качественную работу! Особенно ценим индивидуальный подход к нашим специфическим требованиям и возможность отслеживать груз на всем пути следования.</p>
+                        </div>
+                        <div class="testimonial-author">
+                            <img src="images/human/testimonial 2.avif" alt="Елена Смирнова">
+                            <div>
+                                <h4>Елена Смирнова</h4>
+                                <p>ЗАО "Технологии будущего"</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-item">
+                    <div class="testimonial-content">
+                        <div class="testimonial-text">
+                            <p>Хочу выразить благодарность всей команде TransPort за профессионализм и ответственный подход к работе. Регулярно пользуемся услугами компании для перевозки нашего оборудования и всегда довольны результатом.</p>
+                        </div>
+                        <div class="testimonial-author">
+                            <img src="images/human/testimonial 3.jpg" alt="Михаил Ковалев">
+                            <div>
+                                <h4>Михаил Ковалев</h4>
+                                <p>ИП Ковалев М.С.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="testimonials-controls">
+                <button class="testimonial-prev"><i class="fas fa-chevron-left"></i></button>
+                <div class="testimonial-dots">
+                    <span class="testimonial-dot active" data-slide="0"></span>
+                    <span class="testimonial-dot" data-slide="1"></span>
+                    <span class="testimonial-dot" data-slide="2"></span>
+                </div>
+                <button class="testimonial-next"><i class="fas fa-chevron-right"></i></button>
+            </div>
+        </div>
+    </section>
+
+    <section class="section partners">
+        <div class="container">
+            <div class="section-header">
+                <h2>Наши партнеры</h2>
+                <p>Компании, которые нам доверяют</p>
+            </div>
+            <div class="partners-logos">
+                <div class="partner-logo">
+                    <img src="images/partners/fedex.png" alt="Партнер 1">
+                </div>
+                <div class="partner-logo">
+                    <img src="images/partners/dnl.png" alt="Партнер 2">
+                </div>
+                <div class="partner-logo">
+                    <img src="images/partners/maersk.png" alt="Партнер 3">
+                </div>
+                <div class="partner-logo">
+                    <img src="images/partners/amazon.png" alt="Партнер 4">
+                </div>
+                <div class="partner-logo">
+                    <img src="images/partners/alibaba.png" alt="Партнер 5">
+                </div>
+                <div class="partner-logo">
+                    <img src="images/partners/ups.png" alt="Партнер 6">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-top">
+            <div class="container">
+                <div class="footer-widgets">
+                    <div class="footer-widget">
+                        <div class="footer-logo">
+                            <h2>Trans<span>Port</span></h2>
+                        </div>
+                        <p>Профессиональные грузоперевозки по России и за рубеж. Более 10 лет опыта в сфере логистики.</p>
+                        <div class="social-links">
+                            <a href="#"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                            <a href="#"><i class="fab fa-vk"></i></a>
+                            <a href="#"><i class="fab fa-telegram"></i></a>
+                        </div>
+                    </div>
+                    <div class="footer-widget">
+                        <h4>Навигация</h4>
+                        <ul class="footer-menu">
+                            <li><a href="index.html">Главная</a></li>
+                            <li><a href="pages/services.html">Услуги</a></li>
+                            <li><a href="pages/about.html">О компании</a></li>
+                            <li><a href="pages/fleet.html">Автопарк</a></li>
+                            <li><a href="pages/contacts.html">Контакты</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-widget">
+                        <h4>Услуги</h4>
+                        <ul class="footer-menu">
+                            <li><a href="pages/services.html#auto">Автомобильные перевозки</a></li>
+                            <li><a href="pages/services.html#rail">Железнодорожные перевозки</a></li>
+                            <li><a href="pages/services.html#sea">Морские перевозки</a></li>
+                            <li><a href="pages/services.html#warehouse">Складские услуги</a></li>
+                            <li><a href="pages/services.html#customs">Таможенное оформление</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-widget">
+                        <h4>Контакты</h4>
+                            <div class="contact-info">
+                                <div class="contact-item">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <p>Москва, ул. Транспортная, 123</p>
+                            </div>
+                            <div class="contact-item">
+                                <i class="fas fa-phone-alt"></i>
+                                <p><a href="tel:+78001234567">+7 (800) 123-45-67</a></p>
+                            </div>
+                            <div class="contact-item">
+                                <i class="fas fa-envelope"></i>
+                                <p><a href="mailto:info@transport.ru">info@transport.ru</a></p>
+                            </div>
+                            <div class="contact-item">
+                                <i class="fas fa-clock"></i>
+                                <p>Пн-Пт: 9:00 - 18:00</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <div class="copyright">
+                    <p>&copy; 2023 TransPort. Все права защищены.</p>
+                </div>
+                <div class="footer-links">
+                    <a href="#">Политика конфиденциальности</a>
+                    <a href="#">Условия использования</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <div class="modal" id="orderModal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <h2>Оставить заявку</h2>
+            <form id="order-form">
+                <div class="form-group">
+                    <label for="name">Ваше имя</label>
+                    <input class="colorblack" type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="phone">Телефон</label>
+                    <input class="colorblack" type="tel" id="phone" name="phone" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input class="colorblack" type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="comment">Комментарий</label>
+                    <textarea class="colorblack" id="comment" name="comment" rows="3"></textarea>
+                </div>
+                <div class="form-group">
+                    <label class="checkbox-container">
+                        <input type="checkbox" id="agreement" name="agreement" required>
+                        <span class="checkmark"></span>
+                        Я согласен с <a href="#">политикой конфиденциальности</a>
+                    </label>
+                </div>
+                <button type="submit" class="btn primary-btn">Отправить заявку</button>
+            </form>
+        </div>
+    </div>
+    <div class="modal" id="callbackModal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <h2>Заказать звонок</h2>
+            <form id="callback-form">
+                <div class="form-group">
+                    <label for="callback-name">Ваше имя</label>
+                    <input type="text" id="callback-name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="callback-phone">Телефон</label>
+                    <input type="tel" id="callback-phone" name="phone" required>
+                </div>
+                <div class="form-group">
+                    <label class="checkbox-container">
+                        <input type="checkbox" id="callback-agreement" name="agreement" required>
+                        <span class="checkmark"></span>
+                        Я согласен с <a href="#">политикой конфиденциальности</a>
+                    </label>
+                </div>
+                <button type="submit" class="btn primary-btn">Заказать звонок</button>
+            </form>
+        </div>
+    </div>
+
+    <div id="success-message" class="success-message">
+        <div class="success-content">
+            <i class="fas fa-check-circle"></i>
+            <h3>Спасибо за обращение!</h3>
+            <p>Ваша заявка успешно отправлена. Мы свяжемся с вами в ближайшее время.</p>
+            <button class="close-success">Закрыть</button>
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
+    <script src="js/slider.js"></script>
+    <script src="js/animations.js"></script>
+</body>
+</html> 

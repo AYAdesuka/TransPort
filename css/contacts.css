@@ -1,0 +1,12 @@
+@import 'vendor/_reset.css';
+@import 'vendor/_global.css';
+
+
+@import 'components/_header.css';
+@import 'components/_btn.css';
+@import 'components/_footer.css';
+@import 'components/_modal.css';
+@import 'components/_animations.css';
+
+@import 'home/_contact.css';
+@import 'home/_CTA.css';

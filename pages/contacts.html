@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Контакты - TransPort</title>
+    <link rel="stylesheet" href="../css/contacts.css">    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body class="body">
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <a href="../index.html">
+                        <h1>Trans<span>Port</span></h1>
+                    </a>
+                </div>
+                <nav class="main-nav">
+                    <ul>
+                        <li><a href="../index.html">Главная</a></li>
+                        <li><a href="services.html">Услуги</a></li>
+                        <li><a href="about.html">О компании</a></li>
+                        <li><a href="fleet.html">Автопарк</a></li>
+                        <li><a href="contacts.html" class="active">Контакты</a></li>
+                    </ul>
+                </nav>
+                <div class="header-contact">
+                    <a href="tel:+78001234567" class="phone">+7 (800) 123-45-67</a>
+                    <button class="callback-btn">Заказать звонок</button>
+                </div>
+                <div class="mobile-menu">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="section contacts-hero">
+        <div class="container container-text">
+            <div class="section-header fade-in">
+                <h1 class="title">Контакты</h1>
+                <p class="subtitle">Свяжитесь с нами любым удобным способом - мы всегда на связи</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="section contacts-content">
+        <div class="container">
+            <div class="contacts-grid">
+                <div class="contact-info-card fade-in">
+                    <div class="contact-info">
+                        <h3>Контактная информация</h3>
+                        <div class="contact-string">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <p>Москва, ул. Транспортная, 123</p>
+                        </div>
+                        <div class="contact-string">
+                            <i class="fas fa-phone-alt"></i>
+                            <p><a href="tel:+78001234567">+7 (800) 123-45-67</a></p>
+                        </div>
+                        <div class="contact-string">
+                            <i class="fas fa-envelope"></i>
+                            <p><a href="mailto:info@transport.ru">info@transport.ru</a></p>
+                        </div>
+                        <div class="contact-string">
+                            <i class="fas fa-clock"></i>
+                            <p>Пн-Пт: 9:00 - 18:00</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contact-form-card fade-in">
+                    <h3>Напишите нам</h3>
+                    <form id="contact-form">
+                        <div class="form-group">
+                            <label for="name">Ваше имя</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Телефон</label>
+                            <input type="tel" id="phone" name="phone" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Сообщение</label>
+                            <textarea id="message" name="message" rows="5" required></textarea>
+                        </div>
+                        <div class="form-group">
+                            <label class="checkbox-container">
+                                <input type="checkbox" id="agreement" name="agreement" required>
+                                <span class="checkmark"></span>
+                                Я согласен с <a href="#">политикой конфиденциальности</a>
+                            </label>
+                        </div>
+                        <button type="submit" class="btn primary-btn">Отправить сообщение</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section map-section">
+        <div class="container">
+            <div class="map-container fade-in">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2244.772477431539!2d37.618423!3d55.755826!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNTXCsDQ1JzIxLjAiTiAzN8KwMzcnMDYuMyJF!5e0!3m2!1sru!2sru!4v1620000000000!5m2!1sru!2sru" 
+                    width="100%" 
+                    height="450" 
+                    style="border:0;" 
+                    allowfullscreen="" 
+                    loading="lazy">
+                </iframe>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-top">
+            <div class="container">
+                <div class="footer-widgets">
+                    <div class="footer-widget">
+                        <div class="footer-logo">
+                            <h2>Trans<span>Port</span></h2>
+                        </div>
+                        <p>Профессиональные грузоперевозки по России и за рубеж. Более 10 лет опыта в сфере логистики.</p>
+                        <div class="social-links">
+                            <a href="#"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                            <a href="#"><i class="fab fa-vk"></i></a>
+                            <a href="#"><i class="fab fa-telegram"></i></a>
+                        </div>
+                    </div>
+                    <div class="footer-widget">
+                        <h4>Навигация</h4>
+                        <ul class="footer-menu">
+                            <li><a href="../index.html">Главная</a></li>
+                            <li><a href="services.html">Услуги</a></li>
+                            <li><a href="about.html">О компании</a></li>
+                            <li><a href="fleet.html">Автопарк</a></li>
+                            <li><a href="contacts.html">Контакты</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-widget">
+                        <h4>Услуги</h4>
+                        <ul class="footer-menu">
+                            <li><a href="services.html#auto">Автомобильные перевозки</a></li>
+                            <li><a href="services.html#rail">Железнодорожные перевозки</a></li>
+                            <li><a href="services.html#sea">Морские перевозки</a></li>
+                            <li><a href="services.html#warehouse">Складские услуги</a></li>
+                            <li><a href="services.html#customs">Таможенное оформление</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-widget">
+                        <h4>Контакты</h4>
+                        <div class="contact-info">
+                            <div class="contact-item">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <p>Москва, ул. Транспортная, 123</p>
+                            </div>
+                            <div class="contact-item">
+                                <i class="fas fa-phone-alt"></i>
+                                <p><a href="tel:+78001234567">+7 (800) 123-45-67</a></p>
+                            </div>
+                            <div class="contact-item">
+                                <i class="fas fa-envelope"></i>
+                                <p><a href="mailto:info@transport.ru">info@transport.ru</a></p>
+                            </div>
+                            <div class="contact-item">
+                                <i class="fas fa-clock"></i>
+                                <p>Пн-Пт: 9:00 - 18:00</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <div class="copyright">
+                    <p>&copy; 2023 TransPort. Все права защищены.</p>
+                </div>
+                <div class="footer-links">
+                    <a href="#">Политика конфиденциальности</a>
+                    <a href="#">Условия использования</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <div class="modal" id="callbackModal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <h2>Заказать звонок</h2>
+            <form id="callback-form">
+                <div class="form-group">
+                    <label for="callback-name">Ваше имя</label>
+                    <input type="text" id="callback-name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="callback-phone">Телефон</label>
+                    <input type="tel" id="callback-phone" name="phone" required>
+                </div>
+                <div class="form-group">
+                    <label class="checkbox-container">
+                        <input type="checkbox" id="callback-agreement" name="agreement" required>
+                        <span class="checkmark"></span>
+                        Я согласен с <a href="#">политикой конфиденциальности</a>
+                    </label>
+                </div>
+                <button type="submit" class="btn primary-btn">Заказать звонок</button>
+            </form>
+        </div>
+    </div>
+
+    <div id="success-message" class="success-message">
+        <div class="success-content">
+            <i class="fas fa-check-circle"></i>
+            <h3>Спасибо за обращение!</h3>
+            <p>Ваша заявка успешно отправлена. Мы свяжемся с вами в ближайшее время.</p>
+            <button class="close-success">Закрыть</button>
+        </div>
+    </div>
+    <script src="../js/script.js"></script>
+    <script src="../js/animations.js"></script>
+</body>
+</html> 
