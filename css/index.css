@@ -1,21 +1,21 @@
-@import 'vendor/_reset.css';
-@import 'vendor/_global.css';
+@import 'vendor/reset.css';
+@import 'vendor/global.css';
 
 
-@import 'components/_header.css';
-@import 'components/_btn.css';
-@import 'components/_footer.css';
-@import 'components/_modal.css';
-@import 'components/_animations.css';
+@import 'components/header.css';
+@import 'components/btn.css';
+@import 'components/footer.css';
+@import 'components/modal.css';
+@import 'components/animations.css';
 
 
-@import 'home/_hero.css';
-@import 'home/_services.css';
-@import 'home/_advantages.css';
-@import 'home/_calculator.css';
-@import 'home/_CTA.css';
-@import 'home/_testimonial.css';
-@import 'home/_partners.css';
+@import 'home/hero.css';
+@import 'home/services.css';
+@import 'home/advantages.css';
+@import 'home/calculator.css';
+@import 'home/CTA.css';
+@import 'home/testimonial.css';
+@import 'home/partners.css';
 
 
 
